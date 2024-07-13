@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuChat</title>
+
+    <link rel="stylesheet" href="{% static 'chatapp/css/styles.css' %}">
+</head>
+<body>
+
+    <div class="home-container">
+        <div>
+            <h1 class="welcome-text">Hi Welcome to DocuChat</h1>
+            <div class="">
+            <a style="display:block;" href="{% url 'app' app='chat' %}">Chat</a>
+            <a style="display:block;" href="{% url 'app' app='image' %}">Image</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+</body>
+</html>
