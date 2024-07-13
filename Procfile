@@ -1,0 +1,1 @@
+web: gunicorn docuchat.wsgi --log-file
